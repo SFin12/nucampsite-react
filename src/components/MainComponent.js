@@ -19,16 +19,7 @@ const mapStateToProps = (state) => {
 };
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.props = {
-            campsites: CAMPSITES,
-            comments: COMMENTS,
-            partners: PARTNERS,
-            promotions: PROMOTIONS,
-        };
-    }
-
+    
     render() {
         const HomePage = () => {
             return (
@@ -98,4 +89,4 @@ class Main extends Component {
     }
 }
 
-export default withRouter(connect(mapStateProps)(Main));
+export default withRouter(connect(mapStateToProps)(Main));

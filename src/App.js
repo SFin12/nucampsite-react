@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Main from "./components/MainComponent";
 import { BrowserRouter } from "react-router-dom";
 import { ConfigureStore } from "./Redux/configureStore";
+import { Provider } from "react-redux";
 import "./App.css";
 
 const store = ConfigureStore();
